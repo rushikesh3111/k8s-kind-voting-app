@@ -4,10 +4,6 @@ metadata:
   labels:
     app: redis
   name: redis
-  annotations:
-        prometheus.io/path: /metrics
-        prometheus.io/port: "9101"
-        prometheus.io/scrape: "true"
 spec:
   replicas: 1
   selector:
