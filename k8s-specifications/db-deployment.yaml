@@ -4,6 +4,10 @@ metadata:
   labels:
     app: db
   name: db
+  annotations:
+        prometheus.io/path: /metrics
+        prometheus.io/port: "9101"
+        prometheus.io/scrape: "true"
 spec:
   replicas: 1
   selector:
