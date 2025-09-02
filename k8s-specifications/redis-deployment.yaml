@@ -9,7 +9,7 @@ metadata:
         prometheus.io/port: "9101"
         prometheus.io/scrape: "true"
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: redis
